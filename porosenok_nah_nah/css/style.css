@@ -1,0 +1,233 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+/* ol li{list-style: none;} */
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background: url('../img/4_pigs_fon111.png') 0 0/8% repeat;
+    font-size: 22px;
+    line-height: 1.5;
+    min-width: 1300px;
+}
+
+.menu{
+    margin: 150px 1% 0 6%;
+    width: 13%;
+    min-height: 400px;
+    padding: 10px;
+    background: #f3f3ff;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    float: left;
+}
+.but-menu{
+    display: block;
+    min-height: 60px;
+    max-width: 100%;
+    margin-bottom: 5px;
+    padding: 10px 0 0 0;
+    text-align: center;
+    color: #666677;
+    box-shadow: 0px 6px 20px 0px rgba(128, 180, 170, 0.45);
+    border: 2px solid #8888;
+    border-radius: 15px;
+}
+.fan-order{
+    display: block;
+    min-height: 60px;
+    max-width: 100%;
+    padding-top: 10px;
+    text-align: center;
+    color: #666677;
+    box-shadow: 0px 6px 20px 0px rgba(128, 180, 170, 0.45);
+    border: 2px solid #8888;
+    border-radius: 15px;
+}
+
+.wrap{
+    max-width: 60%;
+    min-height: 100%;
+    padding: 0 10px 100px;
+    background: #f3f3ff;
+    float: left;
+}
+
+.logo{
+    margin: 10px 0;
+    width: 100%;
+    box-shadow: 0px 6px 20px 0px rgba(128, 180, 170, 0.45);
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+h2{
+    opacity: 0.9;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin: 10px 0;
+}
+
+h3{
+    font-size: 30px;
+    margin: 15px 7% 10px;
+}
+
+.info{
+    margin: 20px 7%;
+}
+
+.piglet li{
+    background: url('../img/piglet.png') left 6px/20px auto no-repeat;
+    padding: 0 0 0 30px;
+    list-style-type: none;
+}
+
+video{
+    max-width: 60%;
+    margin: 15px 0 10px 0;
+}
+
+.info__album {
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+}
+.foto__album {
+    width: 25%;
+    box-shadow: 0px 6px 20px 0px rgba(128, 180, 170, 0.45);
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+}
+.name__album {
+    width: 75%;
+    text-align: center;
+    padding: 0 10px;
+}
+.treck-list {
+    margin: 30px 0 70px 3%;
+    color: #666677;
+    display: flex;
+}
+.treck__name{
+    width: 35%;
+    padding: 0 10px 0 0;
+}
+.treck__name li{
+    height: 50px;
+    margin: 9px 0 0;
+}
+.treck__audio{
+    width: 50%;
+    padding: 0 10px 0;
+    list-style-type: none;
+}
+.treck__text{
+    width: 15%;
+    padding: 0 0 0 10px;
+    height: 50px;
+    list-style-type: none;
+}
+.treck__text li{
+    height: 50px;
+    margin: 9px 0 0;
+}
+.treck__text__link{
+    text-align: center;
+    box-shadow: 0px 6px 20px 0px rgba(128, 180, 170, 0.45);
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    padding: 10px;
+    color: #666677;
+}
+audio{
+    box-shadow: 0px 6px 20px 0px rgba(128, 180, 170, 0.45);
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    height: 50px;
+}
+
+pre{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 22px;
+    line-height: 1.5;
+}
+a:hover{text-decoration: underline;}
+.fan-order:hover{
+    background: rgba(160, 190, 190, 0.45);
+    text-decoration: none;
+}
+.but-menu:hover{
+    background: rgba(160, 190, 190, 0.45);
+    text-decoration: none;
+}
+.treck__text__link:hover{
+    background: rgba(160, 190, 190, 0.45);
+    text-decoration: none;
+}
+
+#main{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#okno{
+    width: 1000px;
+    height: 400px;
+    padding: 25px;
+    box-shadow: 0px 6px 20px 0px rgba(128, 180, 170, 0.45);
+    border: 3px solid #8888;
+    border-radius: 15px;
+    background: #fcfcff;
+    color: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+#main:target{display: block;}
