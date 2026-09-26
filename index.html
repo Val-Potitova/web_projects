@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Знакомство с HTML тегами. Часть 3</title>
+        <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    </head>
+    <body>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div>
+                <p>Name</p>
+                <input placeholder="Name" tabindex="1" name="username" type="text" />
+            </div>
+            <div>
+                <p>Password</p>
+                <input tabindex="2" name="userpass" type="password" />
+            </div>
+            <div>
+                <p>Phone number</p>
+                <input tabindex="3" name="userphone" type="tel" />
+            </div>
+            <div>
+                <p>Gender</p>
+                <div>
+                    <input tabindex="4" checked type="radio" name="gender" value="male" /> Male
+                </div>
+                <div>
+                    <input tabindex="4" type="radio" name="gender" value="female" /> Female
+                </div>
+            </div>
+            <div>
+                <p>Main</p>
+                <div>
+                    <input tabindex="5" checked type="checkbox" name="bike" value="yes" /> Bike
+                </div>
+                <div>
+                    <input tabindex="6" type="checkbox" name="car" value="yes" /> Car
+                </div>
+                <div>
+                    <input tabindex="7" disabled type="checkbox" name="hous" value="yes" /> Hous
+                </div>
+            </div>
+            <div>
+                <p>Another Information</p>
+                <textarea tabindex="8" name="text"></textarea>
+            </div>
+            <div>
+                <p>Upload photo</p>
+                <input tabindex="9" type="file" />
+            </div>
+            <div>
+                <p>Favorite color</p>
+                <select tabindex="10" name="color">
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option selected value="yellow">Yellow</option>
+                </select>
+            </div>
+            <div>
+                <p>Action</p>
+                <button tabindex="11" type="submit">Send</button>
+                <button tabindex="12" type="reset">Cleer</button>
+            </div>
+        </form>
+    </body>
+</html>
