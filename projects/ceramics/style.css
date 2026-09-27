@@ -269,12 +269,11 @@ p {
     flex: 1;
     display: flex;
     flex-direction: column;
-
     background: #536b55;
     border-radius: 4px;
     overflow: hidden;
-
     box-shadow: 0 8px 25px rgba(48, 53, 47, 0.08);
+    border: 1px solid rgba(48, 53, 47, 0.08);
 }
 
 .verticsl__items.featured {
@@ -316,16 +315,12 @@ p {
     display: block;
     margin: 0 25px 25px;
     padding: 14px 10px;
-
     background: #e3b77c;
     color: #30352f;
-
     border-radius: 3px;
-
     text-align: center;
     font-size: 14px;
     font-weight: 700;
-
     transition:
         background 0.2s ease,
         transform 0.2s ease;
