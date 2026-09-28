@@ -1271,10 +1271,10 @@ h2 {
     background:linear-gradient(135deg,rgba(201,75,60,.65),rgba(217,164,65,.16))
 }
 .header__info-item:last-child::after{
-    content:"АРТ\A 2024";
+    content:"АРТ\A 744";
     white-space:pre;
     position:absolute;
-    right:118px;
+    right:134px;
     top:85px;z-index:1;
     color:var(--color-white);
     font-size:58px;
