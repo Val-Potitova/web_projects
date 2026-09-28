@@ -39,7 +39,7 @@ body{
     background: url('../img/4_pigs_fon111.png') 0 0/8% repeat;
     font-size: 22px;
     line-height: 1.5;
-    min-width: 1300px;
+    /* min-width: 1300px; */
 }
 
 .menu{
@@ -242,7 +242,6 @@ a:hover{text-decoration: underline;}
 
 @media (max-width: 1200px) {
     body {
-        min-width: 0;
         font-size: 20px;
     }
     .menu {
@@ -268,7 +267,6 @@ a:hover{text-decoration: underline;}
 
 @media (max-width: 900px) {
     body {
-        font-size: 18px;
         background-size: 12%;
     }
     .menu {
@@ -339,7 +337,6 @@ a:hover{text-decoration: underline;}
         height: auto;
     }
     h1 {font-size: 32px;}
-    h2 {font-size: 13px;}
     h3 {
         font-size: 26px;
         margin: 20px 4% 10px;
@@ -379,7 +376,7 @@ a:hover{text-decoration: underline;}
 }
 @media (max-width: 600px) {
     body {
-        font-size: 16px;
+        font-size: 18px;
         line-height: 1.45;
         background-size: 20%;
     }
@@ -397,7 +394,7 @@ a:hover{text-decoration: underline;}
         margin: 10px 0;
     }
     h2 {
-        font-size: 11px;
+        font-size: 12px;
         letter-spacing: 0.12em;
         line-height: 1.4;
     }
@@ -492,7 +489,6 @@ a:hover{text-decoration: underline;}
 }
 
 @media (max-width: 400px) {
-    body {font-size: 15px;}
     .menu {
         width: 98%;
         padding: 5px;
@@ -516,7 +512,7 @@ a:hover{text-decoration: underline;}
         padding-right: 8px;
     }
     h1 {font-size: 24px;}
-    h2 {font-size: 10px;}
+    h2 {font-size: 12px;}
     h3 {font-size: 21px;}
     .info {
         margin-left: 1%;
