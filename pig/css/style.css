@@ -1,0 +1,533 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background: url('../img/4_pigs_fon111.png') 0 0/8% repeat;
+    font-size: 22px;
+    line-height: 1.5;
+    min-width: 1300px;
+}
+
+.menu{
+    margin: 150px 1% 0 6%;
+    width: 13%;
+    min-height: 400px;
+    padding: 10px;
+    background: #f3f3ff;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    float: left;
+}
+.but-menu{
+    display: block;
+    min-height: 60px;
+    max-width: 100%;
+    margin-bottom: 5px;
+    padding: 10px 0 0 0;
+    text-align: center;
+    color: #666677;
+    box-shadow: 0px 6px 20px 0px rgba(128, 180, 170, 0.45);
+    border: 2px solid #8888;
+    border-radius: 15px;
+}
+#menu-toggle {
+    display: none;
+}
+.menu-button {
+    display: none;
+}
+.fan-order{
+    display: block;
+    min-height: 60px;
+    max-width: 100%;
+    padding-top: 10px;
+    text-align: center;
+    color: #666677;
+    box-shadow: 0px 6px 20px 0px rgba(128, 180, 170, 0.45);
+    border: 2px solid #8888;
+    border-radius: 15px;
+}
+
+.wrap{
+    max-width: 60%;
+    min-height: 100%;
+    padding: 0 10px 100px;
+    background: #f3f3ff;
+    float: left;
+}
+
+.logo{
+    margin: 10px 0;
+    width: 100%;
+    box-shadow: 0px 6px 20px 0px rgba(128, 180, 170, 0.45);
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+h2{
+    opacity: 0.9;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin: 10px 0;
+}
+
+h3{
+    font-size: 30px;
+    margin: 15px 7% 10px;
+}
+
+.info{
+    margin: 20px 7%;
+}
+
+.piglet li{
+    background: url('../img/piglet.png') left 6px/20px auto no-repeat;
+    padding: 0 0 0 30px;
+    list-style-type: none;
+}
+
+video{
+    max-width: 60%;
+    margin: 15px 0 10px 0;
+}
+
+.info__album {
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+}
+.foto__album {
+    width: 25%;
+    box-shadow: 0px 6px 20px 0px rgba(128, 180, 170, 0.45);
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+}
+.name__album {
+    width: 75%;
+    text-align: center;
+    padding: 0 10px;
+}
+.treck-list {
+    margin: 30px 0 70px 3%;
+    color: #666677;
+    display: flex;
+}
+.treck__name{
+    width: 35%;
+    padding: 0 10px 0 0;
+}
+.treck__name li{
+    height: 50px;
+    margin: 9px 0 0;
+}
+.treck__audio{
+    width: 50%;
+    padding: 0 10px 0;
+    list-style-type: none;
+}
+.treck__text{
+    width: 15%;
+    padding: 0 0 0 10px;
+    height: 50px;
+    list-style-type: none;
+}
+.treck__text li{
+    height: 50px;
+    margin: 9px 0 0;
+}
+.treck__text__link{
+    text-align: center;
+    box-shadow: 0px 6px 20px 0px rgba(128, 180, 170, 0.45);
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    padding: 10px;
+    color: #666677;
+}
+audio{
+    box-shadow: 0px 6px 20px 0px rgba(128, 180, 170, 0.45);
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    height: 50px;
+}
+
+pre{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 22px;
+    line-height: 1.5;
+}
+a:hover{text-decoration: underline;}
+.fan-order:hover{
+    background: rgba(160, 190, 190, 0.45);
+    text-decoration: none;
+}
+.but-menu:hover{
+    background: rgba(160, 190, 190, 0.45);
+    text-decoration: none;
+}
+.treck__text__link:hover{
+    background: rgba(160, 190, 190, 0.45);
+    text-decoration: none;
+}
+
+#main{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(180, 190, 190, 0.30);
+}
+#okno{
+    width: 1000px;
+    height: 400px;
+    padding: 25px;
+    box-shadow: 0px 6px 20px 0px rgba(128, 180, 170, 0.45);
+    border: 3px solid #8888;
+    border-radius: 15px;
+    background: #fcfcff;
+    color: #000;
+    position: relative;
+    z-index: 3;
+    top: 30%;
+    left: 0;
+    margin: auto;
+}
+#main:target{
+    display: block;
+    text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+    body {
+        min-width: 0;
+        font-size: 20px;
+    }
+    .menu {
+        margin: 50px 1% 0 3%;
+        width: 18%;
+    }
+    .wrap { max-width: 75%;}
+    .info { margin: 20px 5%;}
+    h1 {font-size: 36px;}
+    h3 {
+        font-size: 28px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    video {max-width: 80%;}
+    #okno {
+        width: 80%;
+        height: auto;
+        max-height: 70vh;
+        overflow-y: auto;
+    }
+}
+
+@media (max-width: 900px) {
+    body {
+        font-size: 18px;
+        background-size: 12%;
+    }
+    .menu {
+        position: relative;
+        width: 96%;
+        min-height: auto;
+        margin: 10px auto;
+        padding: 8px;
+        float: none;
+        display: block;
+        border-radius: 12px;
+    }
+    .menu-button {
+        display: flex;
+        width: 45px;
+        height: 40px;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+    }
+    .menu-button span {
+        display: block;
+        width: 28px;
+        height: 3px;
+        background: #666677;
+        border-radius: 3px;
+        transition: 0.3s;
+    }
+    .menu-links {
+        display: none;
+        width: 100%;
+        margin-top: 8px;
+    }
+    .but-menu,
+    .fan-order {
+        display: block;
+        width: 100%;
+        min-height: 45px;
+        margin: 5px 0;
+        padding: 8px;
+        text-align: center;
+        border-radius: 10px;
+    }
+    #menu-toggle:checked ~ .menu-links {
+        display: block;
+    }
+    #menu-toggle:checked + .menu-button span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    #menu-toggle:checked + .menu-button span:nth-child(2) {
+        opacity: 0;
+    }
+    #menu-toggle:checked + .menu-button span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .wrap {
+        float: none;
+        width: 94%;
+        max-width: none;
+        margin: 0 auto;
+        padding: 0 15px 60px;
+    }
+    .logo {
+        width: 100%;
+        height: auto;
+    }
+    h1 {font-size: 32px;}
+    h2 {font-size: 13px;}
+    h3 {
+        font-size: 26px;
+        margin: 20px 4% 10px;
+    }
+    .info {margin: 20px 4%;}
+    video {
+        display: block;
+        width: 90%;
+        max-width: 90%;
+        height: auto;
+        margin: 15px auto;
+    }
+    .info__album {align-items: center;}
+    .foto__album {
+        width: 30%;
+        height: auto;
+    }
+    .name__album {width: 70%;}
+    .name__album h3 {margin: 10px 0;}
+    .treck-list {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .treck__name {width: 35%;}
+    .treck__audio {width: 50%;}
+    .treck__text {width: 15%;}
+    audio {max-width: 100%;}
+    #okno {
+        width: 90%;
+        height: auto;
+        max-height: 75vh;
+        overflow-y: auto;
+        padding: 20px;
+        top: 15%;
+        font-size: 17px;
+    }
+}
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+        line-height: 1.45;
+        background-size: 20%;
+    }
+    .wrap {
+        width: 96%;
+        padding: 0 10px 40px;
+    }
+    .logo {
+        margin: 5px 0 10px;
+        border-radius: 10px;
+    }
+    h1 {
+        font-size: 27px;
+        line-height: 1.2;
+        margin: 10px 0;
+    }
+    h2 {
+        font-size: 11px;
+        letter-spacing: 0.12em;
+        line-height: 1.4;
+    }
+    h3 {
+        font-size: 23px;
+        line-height: 1.25;
+        margin: 20px 2% 10px;
+    }
+    .info {
+        margin: 15px 2%;
+    }
+    .piglet li {
+        background-size: 17px auto;
+        background-position: left 5px;
+        padding-left: 25px;
+    }
+    video {
+        width: 100%;
+        max-width: 100%;
+        margin: 15px 0;
+    }
+    .info__album {
+        flex-direction: column;
+        text-align: center;
+    }
+    .foto__album {
+        width: 70%;
+        max-width: 300px;
+        margin: 0 auto 10px;
+    }
+    .name__album {
+        width: 100%;
+        padding: 0;
+    }
+    .name__album h3 {
+        margin: 5px 0;
+    }
+    .treck-list {
+        display: block;
+        margin: 25px 0 50px;
+    }
+    .treck__name,
+    .treck__audio,
+    .treck__text {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .treck__name {
+        padding-left: 30px;
+    }
+    .treck__name li,
+    .treck__text li {
+        height: auto;
+        min-height: 45px;
+        margin: 5px 0;
+    }
+    .treck__audio {list-style: none;}
+    .treck__audio li {
+        margin: 8px 0;
+    }
+    audio {
+        width: 100%;
+        height: 45px;
+    }
+    .treck__text {
+        text-align: center;
+    }
+    .treck__text__link {
+        display: inline-block;
+        padding: 7px 15px;
+        margin-top: 5px;
+    }
+    #okno {
+        width: 94%;
+        max-height: 80vh;
+        padding: 15px;
+        top: 10%;
+        font-size: 15px;
+        line-height: 1.4;
+        border-radius: 12px;
+    }
+    #okno .piglet {
+        margin-top: 10px;
+    }
+    pre {
+        font-size: 15px;
+        line-height: 1.4;
+        white-space: pre-wrap;
+        overflow-wrap: break-word;
+    }
+}
+
+@media (max-width: 400px) {
+    body {font-size: 15px;}
+    .menu {
+        width: 98%;
+        padding: 5px;
+    }
+    .menu-button {
+        width: 42px;
+        height: 38px;
+    }
+    .menu-button span {
+        width: 26px;
+        height: 3px;
+    }
+    .but-menu,
+    .fan-order {
+        min-height: 42px;
+        font-size: 14px;
+    }
+    .wrap {
+        width: 98%;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    h1 {font-size: 24px;}
+    h2 {font-size: 10px;}
+    h3 {font-size: 21px;}
+    .info {
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    .foto__album {
+        width: 80%;
+    }
+    #okno {
+        width: 96%;
+        padding: 12px;
+        font-size: 14px;
+    }
+}
