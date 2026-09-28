@@ -165,7 +165,7 @@ body {
 }
 
 .menu {
-  background: url("./img/bg_menu.png") 50%/cover no-repeat, #e6fae4e3;
+  background: url("./img/bg_menu.jpg") 50%/cover no-repeat, #e6fae4e3;
   min-height: 300px;
 }
 @media (min-width: 551px) {
@@ -179,21 +179,31 @@ body {
   }
 }
 .menu__row {
-  margin: 20px auto 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  margin: 40px 25px 0;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  gap: 18px;
+}
+.menu__logo {
+  position: absolute;
+  top: 16px;
+  left: 45%;
 }
 @media (min-width: 551px) {
   .menu__row {
     max-width: 551px;
     margin: 35px auto 0;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu__logo {
+    position: static;
   }
 }
 @media (min-width: 841px) {
@@ -273,7 +283,7 @@ body {
   }
 }
 .vin-oliva .vin-oliva__img-big {
-  background: url("./img/vin-oliva/big_icon.png") 50%/15% auto no-repeat, url("./img/vin-oliva/big.png") 0 0/100% auto no-repeat;
+  background: url("./img/vin-oliva/big_icon.png") 15%/20% auto no-repeat, url("./img/vin-oliva/big.png") 0 0/100% auto no-repeat;
   min-height: 180px;
 }
 @media (min-width: 551px) {
@@ -328,7 +338,7 @@ body {
   }
 }
 .boriosa__img-big {
-  background: url("./img/boriosa/big_icon.png") 50%/18% auto no-repeat, url("./img/boriosa/big.png") 0 0/100% auto no-repeat;
+  background: url("./img/boriosa/big_icon.png") 50%/18% auto no-repeat, url("./img/boriosa/big.png") 70%/cover no-repeat;
   min-height: 180px;
 }
 @media (min-width: 551px) {
@@ -371,6 +381,11 @@ body {
   height: auto;
 }
 
+.hulot {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+}
 @media (min-width: 841px) {
   .hulot {
     display: -webkit-box;
@@ -379,19 +394,25 @@ body {
   }
 }
 .hulot__img-big {
-  background: url("./img/hulot/big_icon.png") 10%/1% auto no-repeat, url("./img/hulot/big_one.png") 0 0/50% auto no-repeat, url("./img/hulot/big_two.png") 100% 0/50% auto no-repeat;
-  min-height: 180px;
+  background: url("./img/hulot/big_icon.png") 50%/30% auto no-repeat, url("./img/hulot/big_one.png") 50%/cover no-repeat;
+  min-height: 170px;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
 }
 @media (min-width: 551px) {
   .hulot__img-big {
-    min-height: 320px;
+    min-height: 300px;
   }
 }
 @media (min-width: 841px) {
   .hulot__img-big {
-    background: url("./img/hulot/big_icon.png") 50%/35% auto no-repeat, url("./img/hulot/big_one.png") 50%/cover no-repeat;
+    background: url("./img/hulot/big_icon.png") 50%/25% auto no-repeat, url("./img/hulot/big_one.png") 50%/cover no-repeat;
     fleX: 0 1 33.333%;
   }
+}
+.hulot__column {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
 }
 @media (min-width: 841px) {
   .hulot__column {
@@ -410,9 +431,14 @@ body {
   width: 100%;
   height: auto;
 }
+.hulot__img-big2 {
+  background: url("./img/hulot/big_two.jpg") 50%/cover no-repeat;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
 @media (min-width: 841px) {
   .hulot__img-big2 {
-    background: url("./img/hulot/big_one.png") 50%/cover no-repeat;
+    background: url("./img/hulot/big_two.jpg") 50%/cover no-repeat;
     fleX: 0 1 33.333%;
   }
 }
@@ -639,11 +665,14 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin: 0 -2px;
+  flex-direction: column;
+  gap: 12px;
 }
 @media (min-width: 841px) {
   .email .email__form .email__row {
     min-width: 400px;
     margin: 0 -4px;
+    flex-direction: row;
   }
 }
 .email .email__input {
@@ -656,20 +685,23 @@ body {
 @media (min-width: 841px) {
   .email .email__input {
     padding: 0 4px;
+    display: flex;
+    align-items: center;
   }
 }
 .email .email__input input {
-  padding: 14px;
+  padding: 10px;
   font-style: italic;
   color: #848789;
-  font-size: 14px;
+  font-size: 12px;
 }
 .email .email__input input:focus {
   color: #000;
 }
 @media (min-width: 841px) {
   .email .email__input input {
-    padding: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
   }
 }
 .email .email__btn {
@@ -677,6 +709,10 @@ body {
       -ms-flex: 0 1 25%;
           flex: 0 1 25%;
   padding: 0 2px;
+  display: flex;
+  align-items: center;
+  background: rgba(11, 77, 28, 0.815);
+  justify-content: center;
 }
 @media (min-width: 841px) {
   .email .email__btn {
@@ -684,20 +720,19 @@ body {
   }
 }
 .email .email__btn .email__btn-style {
-  background: rgba(11, 77, 28, 0.815);
   text-align: center;
-  padding: 0 20px;
+  padding: 8px;
 }
 .email .email__btn button {
   text-transform: uppercase;
   background: none;
   color: #fff;
-  font-size: 14px;
+  font-size: 10px;
 }
 @media (min-width: 841px) {
   .email .email__btn button {
-    font-size: 16px;
-    padding: 21px 0;
+    font-size: 14px;
+    padding: 11px;
   }
 }
 

@@ -357,13 +357,14 @@ body::after {
     }
 
     .project-number {
-        top: 21px;
-        right: 22px;
+        top: 15px;
+        right: 18px;
     }
 
     .project-arrow {
-        right: 22px;
-        bottom: 20px;
+        right: 18px;
+        bottom: 12px;
+        font-size: 22px;
     }
 
     .footer {
