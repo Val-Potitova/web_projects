@@ -427,7 +427,7 @@ function destroyWeb(index){
   web.classList.add("burn");
     const emotion =
       Math.random()>.7 ? "horror" : Math.random()>.4 ? "angry" : "suffer";
-    setEmotion(emotion,1800);
+    setEmotion(emotion,2600);
 }
 
 function check(){
