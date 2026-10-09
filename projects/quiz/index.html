@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Тайна старого сундука</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+  <body>
+
+    <div class="branch one"></div>
+    <div class="branch two"></div>
+
+    <div class="candle left"><span class="flame"></span></div>
+    <div class="candle right"><span class="flame"></span></div>
+    <div class="candle c3"><span class="flame"></span></div>
+    <div class="candle c4"><span class="flame"></span></div>
+
+    <div class="bat fly">🦇</div>
+    <div class="bat small">🦇</div>
+
+    <div class="bones">🦴💀</div>
+    <div class="bones two">🦴</div>
+
+    <!-- Все паутины создаются ниже через JS -->
+    <div class="web-layer" id="webLayer"></div>
+
+    <!-- Вспышка при разрушении очередной паутины -->
+    <div class="web-flash" id="webFlash"></div>
+
+    <div class="spider-container" id="spiderContainer">
+        <div class="spider" id="spider">
+        <div class="hat"></div>
+        <div class="body">
+            <i class="brow l"></i>
+            <i class="brow r"></i>
+            <i class="eye l"></i>
+            <i class="eye r"></i>
+            <i class="mouth"></i>
+            <i class="tear t1"></i>
+            <i class="tear t2"></i>
+        </div>
+        <i class="leg l1"></i>
+        <i class="leg l2"></i>
+        <i class="leg l3"></i>
+        <i class="leg l4"></i>
+
+        <i class="leg r1"></i>
+        <i class="leg r2"></i>
+        <i class="leg r3"></i>
+        <i class="leg r4"></i>
+        </div>
+
+        <div class="speech" id="speech"></div>
+    </div>
+
+    <div class="chest-area">
+      <div class="chest" id="chest">
+        <div class="glow"></div>
+        <div class="chest-body"></div>
+        <div class="chest-lid"></div>
+        <div class="lock"></div>
+      </div>
+      <div class="scroll" id="scroll">📜</div>
+    </div>
+
+    <main class="app">
+
+      <header>
+
+        <div class="ornament">✦ · · · ✦</div>
+        <h1>Тайна старого сундука</h1>
+        <div class="subtitle">
+          Здесь что-то спрятано...<br>
+          И паук решил, что он не тварь дрожащая, а право имеет!
+        </div>
+        <div class="progress" id="progress"></div>
+
+      </header>
+
+      <section class="card" id="game">
+
+        <div class="task-number" id="num"></div>
+        <div class="riddle" id="riddle"></div>
+        <div class="answer-row">
+          <input
+            id="answer"
+            type="text"
+            autocomplete="off"
+            placeholder="Твой ответ..."
+            autofocus
+          >
+          <button id="check">Проверить</button>
+        </div>
+        <div class="hint-text" id="hintText"></div>
+
+      </section>
+
+      <section class="card final" id="final">
+
+        <h2>Сундук открыт</h2>
+        <p>
+          Похоже, паук проиграл!<br>
+          Хотя он явно собирается обжаловать это решение...
+        </p>
+        <div class="code">
+          Заклинание
+        </div>
+        <div class="address">
+          Координаты
+        </div>
+        <div class="small-final">
+          Вперёд! Теперь ты знаешь, как найти клад!
+        </div>
+
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
